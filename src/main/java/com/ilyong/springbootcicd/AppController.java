@@ -6,7 +6,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class AppController {
     @GetMapping
+    public String root() {
+        return "root";
+    }
+
+    @GetMapping("/hello")
     public String helloWorld() {
-        return "Hello";
+        return "Hello My World With Jenkins ";
     }
 }
