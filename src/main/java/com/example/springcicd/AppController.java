@@ -14,4 +14,9 @@ public class AppController {
     public String helloWorld() {
         return "hello World";
     }
+
+    @GetMapping("/fix")
+    public String fix() {
+        return "add fix";
+    }
 }
